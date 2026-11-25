@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>زياد حسين | معرض أعمال التصميم</title>
+  <meta name="description" content="معرض أعمال زياد حسين في التصميم الجرافيكي خلال التدريب التعاوني في رمّاق.">
+  <meta name="theme-color" content="#f6f5f0">
+  <link rel="stylesheet" href="style.css">
+  <script src="works.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="signature" href="#top" aria-label="زياد حسين، الرئيسية"><i class="mark" aria-hidden="true"></i>زياد حسين</a>
+  <nav aria-label="التنقل الرئيسي"><a href="#work">الأعمال</a><a href="#about">عن التدريب</a></nav>
+  <span class="year" lang="en" dir="ltr">PORTFOLIO <b>/</b> 2026</span>
+</div></header>
+<main id="top">
+  <section class="hero wrap" aria-labelledby="title">
+    <div class="intro">
+      <p class="kicker"><i></i> معرض التدريب التعاوني</p>
+      <h1 id="title">أعمال<br><span>التصميم</span><em>.</em></h1>
+      <p class="lead">أنا زياد، مصمم جرافيك. هنا جمعت أعمالي خلال تدريبي في رمّاق، من أول مقترح للهوية إلى آخر شريحة في الحملة.</p>
+      <a class="primary" href="#work">تصفّح الأعمال <i class="tiles" aria-hidden="true"></i></a>
+    </div>
+    <div class="feature">
+      <div class="stage" data-scene="sound">
+        <div class="stage-grid"></div><div class="orbit" aria-hidden="true"></div>
+        <span class="cross north" aria-hidden="true"></span><span class="cross south" aria-hidden="true"></span>
+        <button id="featureOpen" class="piece" aria-label="فتح مشروع السماعة"><img id="featureImage" src="assets/headphones.webp" alt="سماعة بالمرجاني والبنفسجي من أعمال رمّاق"></button>
+        <span class="stage-code" dir="ltr" lang="en" id="stageCode">RIMAQ / PRODUCT STUDY</span>
+      </div>
+      <div class="featurebar"><div aria-live="polite"><small>من المعرض</small><strong id="featureTitle">رمّاق · دراسة لون المنتج</strong></div><div class="dots" id="featureChoices" aria-label="اختيار العمل البارز"></div></div>
+    </div>
+  </section>
+  <section id="work" class="archive"><div class="wrap">
+    <div class="section-title"><div><p class="kicker"><i></i> فهرس المشاريع</p><h2>معرض الأعمال<em>.</em></h2></div><span class="archive-count" id="total"></span></div>
+    <div class="filters" id="filters" aria-label="تصفية الأعمال حسب المجال"></div>
+    <div class="cards" id="cards"></div>
+  </div></section>
+  <section id="about" class="wrap about"><div><p class="kicker"><i></i> عن التدريب</p><h2>خلف الأعمال<em>.</em></h2></div><p>خلال تدريبي التعاوني في رمّاق، اشتغلت على هويات ومنشورات ومطبوعات لعلامات مختلفة. في كاروسيل الري كان ترتيب الشرائح جزءًا من الشرح، وفي درع التكريم كان التحدّي أن يظل الاسم واضحًا رغم ميلان اللوحة. جمعت كل مشروع مع تطبيقاته حتى تقدر تتتبّع هذه القرارات في العمل نفسه.</p></section>
+</main>
+<footer><div class="wrap"><span>زياد حسين · التصميم الجرافيكي</span><a href="#top">العودة للأعلى</a></div></footer>
+<dialog id="viewer" aria-labelledby="projectName">
+  <div class="casehead"><div><small>معرض الأعمال</small><h2 id="projectName"></h2></div><button id="closeCase" class="close" aria-label="إغلاق المشروع">×</button></div>
+  <div class="casebody"><aside><p class="kicker">أعمال المشروع</p><div id="series"></div><h3 id="groupName"></h3><p id="groupDesc"></p></aside>
+    <div class="gallery"><div class="frame"><img id="fullImage" alt=""></div><div class="controls"><button id="prev">السابق</button><span aria-live="polite" id="position"></span><button id="next">التالي</button></div><div class="thumbs" id="thumbs" aria-label="صور العمل"></div></div>
+  </div>
+</dialog>
+</body></html>
